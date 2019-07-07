@@ -1,0 +1,161 @@
+<Graph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Game:Start" pos="710,-310,0" flags="0">
+   <Inputs InGame="1" InEditor="1"/>
+  </Node>
+  <Node Id="2" Class="UI:Display:Display" pos="-40,-270,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="3" Class="UI:Display:Constraints" pos="310,-270,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1" type="1" left="0" top="0" width="0" height="0" scale="0" hAlign="1" vAlign="1" maximize="0"/>
+  </Node>
+  <Node Id="4" Class="UI:Events:System:OnSystemStarted" pos="-480,-260,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="5" Class="UI:Events:MainMenu:a" pos="2640,-300,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="6" Class="UI:Events:MainMenu:b" pos="2640,-200,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="7" Class="UI:Events:MainMenu:c" pos="2640,-100,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="8" Class="UI:Events:MainMenu:d" pos="2640,0,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="9" Class="UI:Events:MainMenu:e" pos="2640,100,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="10" Class="UI:Events:MainMenu:f" pos="2640,200,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="11" Class="UI:Events:MainMenu:g" pos="2640,300,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="12" Class="UI:Events:MainMenu:onButtonAirfield" pos="-480,-80,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="15" Class="Mission:LoadNextLevel" pos="1290,-240,0" flags="0">
+   <Inputs NextLevel="woodland"/>
+  </Node>
+  <Node Id="16" Class="Mission:LoadNextLevel" pos="1300,-30,0" flags="0">
+   <Inputs NextLevel="airfield"/>
+  </Node>
+  <Node Id="19" Class="UI:Functions:Settings:SetResolution" pos="2940,-300,0" flags="0">
+   <Inputs ResX="1920" ResY="1080" Fullscreen="0"/>
+  </Node>
+  <Node Id="20" Class="UI:Functions:Settings:SetResolution" pos="2940,-200,0" flags="0">
+   <Inputs ResX="1366" ResY="768" Fullscreen="0"/>
+  </Node>
+  <Node Id="21" Class="UI:Functions:Settings:SetResolution" pos="2940,-100,0" flags="0">
+   <Inputs ResX="1360" ResY="768" Fullscreen="0"/>
+  </Node>
+  <Node Id="22" Class="UI:Functions:Settings:SetResolution" pos="2940,0,0" flags="0">
+   <Inputs ResX="1024" ResY="768" Fullscreen="1"/>
+  </Node>
+  <Node Id="23" Class="UI:Functions:Settings:SetResolution" pos="2940,100,0" flags="0">
+   <Inputs ResX="800" ResY="600" Fullscreen="0"/>
+  </Node>
+  <Node Id="24" Class="UI:Functions:Settings:SetResolution" pos="2940,200,0" flags="0">
+   <Inputs ResX="512" ResY="512" Fullscreen="0"/>
+  </Node>
+  <Node Id="25" Class="UI:Functions:Settings:SetResolution" pos="2940,300,0" flags="0">
+   <Inputs ResX="128" ResY="128" Fullscreen="0"/>
+  </Node>
+  <Node Id="26" Class="UI:Events:MainMenu:onButtonWoodland" pos="-480,-170,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="27" Class="UI:Events:MainMenu:onButtonExit" pos="300,240,0" flags="0">
+   <Inputs instanceID="-1" Port="-1" Idx=""/>
+  </Node>
+  <Node Id="28" Class="UI:Functions:Game:ExitGame" pos="340,320,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="29" Class="UI:Display:Display" pos="950,-260,0" flags="0">
+   <Inputs uiElements_Element="MM_Loading" instanceID="-1"/>
+  </Node>
+  <Node Id="31" Class="UI:Display:Display" pos="960,-40,0" flags="0">
+   <Inputs uiElements_Element="MM_Loading" instanceID="-1"/>
+  </Node>
+  <Node Id="32" Class="UI:Display:Display" pos="-40,-40,0" flags="0">
+   <Inputs uiElements_Element="MainMenu" instanceID="-1"/>
+  </Node>
+  <Node Id="33" Class="Debug:InputKey" pos="1570,-170,0" flags="0">
+   <Inputs entityId="0" Key="escape" NonDevMode="1"/>
+  </Node>
+  <Node Id="34" Class="Actor:LocalPlayer" pos="1580,-230,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="35" Class="UI:Functions:Game:PauseGame" pos="2330,-160,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="36" Class="UI:Functions:Game:ResumeGame" pos="2340,-110,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="37" Class="UI:Functions:MenuEvents:DisplayIngameMenu" pos="2070,-280,0" flags="0">
+   <Inputs Display="0"/>
+  </Node>
+  <Node Id="38" Class="Logic:Sequentializer" pos="1840,-260,0" flags="0" InHideMask="63" OutHideMask="1023">
+   <Inputs Closed="0" Reverse="0"/>
+  </Node>
+  <Node Id="39" Class="UI:Display:Display" pos="2180,-10,0" flags="0">
+   <Inputs uiElements_Element="Paused_display" instanceID="-1"/>
+  </Node>
+  <Node Id="40" Name="Paused_Menu" Class="_commentbox" pos="1560,-444.27151,0" flags="0">
+   <Inputs TextSize="1" Color="1,0.138432,0.138432" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1021" Height="486"/>
+   <NodeSize Width="1021" Height="633.51282"/>
+  </Node>
+  <Node Id="41" Name="Loading_Display_and_Levels" Class="_commentbox" pos="700,-463.55008,0" flags="0">
+   <Inputs TextSize="1" Color="0,0.527115,0.0703601" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="768" Height="486"/>
+   <NodeSize Width="1349.4222" Height="633.51282"/>
+  </Node>
+  <Node Id="42" Name="Main_Menu" Class="_commentbox" pos="-490,-427.51309,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1038" Height="446"/>
+   <NodeSize Width="1038" Height="593.51282"/>
+  </Node>
+  <Node Id="43" Name="Setting_Display" Class="_commentbox" pos="2630,-458.51358,0" flags="0">
+   <Inputs TextSize="1" Color="1,0.527115,0" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="563" Height="709"/>
+   <NodeSize Width="761.8183" Height="856.51282"/>
+  </Node>
+  <Node Id="44" Name="Exit_Game" Class="_commentbox" pos="290,86.285385,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="274" Height="136"/>
+   <NodeSize Width="534.26624" Height="283.51285"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="29" nodeOut="1" portIn="hide" portOut="output" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="1" portIn="update" portOut="output" enabled="1"/>
+  <Edge nodeIn="3" nodeOut="2" portIn="get" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="29" nodeOut="2" portIn="show" portOut="onHide" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="4" portIn="show" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="31" nodeOut="4" portIn="hide" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="32" nodeOut="4" portIn="show" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="5" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="20" nodeOut="6" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="21" nodeOut="7" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="22" nodeOut="8" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="23" nodeOut="9" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="24" nodeOut="10" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="25" nodeOut="11" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="32" nodeOut="12" portIn="hide" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="26" portIn="hide" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="28" nodeOut="27" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="15" nodeOut="29" portIn="Trigger" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="31" portIn="Trigger" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="31" nodeOut="32" portIn="show" portOut="onHide" enabled="1"/>
+  <Edge nodeIn="38" nodeOut="33" portIn="In" portOut="Pressed" enabled="1"/>
+  <Edge nodeIn="33" nodeOut="34" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="39" nodeOut="38" portIn="show" portOut="Out1" enabled="1"/>
+  <Edge nodeIn="39" nodeOut="38" portIn="hide" portOut="Out2" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="39" portIn="send" portOut="onShow" enabled="1"/>
+  <Edge nodeIn="36" nodeOut="39" portIn="send" portOut="onHide" enabled="1"/>
+  <Edge nodeIn="37" nodeOut="39" portIn="send" portOut="onHide" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

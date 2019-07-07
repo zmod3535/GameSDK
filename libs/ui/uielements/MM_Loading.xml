@@ -1,0 +1,6 @@
+<UIElements name="Loading">
+  <UIElement name="MM_Loading">
+    <GFx file="MM_Loading.swf">
+    </GFx>
+  </UIElement>
+</UIElements>

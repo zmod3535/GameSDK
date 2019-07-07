@@ -1,0 +1,6 @@
+<UIElements name="Paused">
+  <UIElement name="Paused_display">
+    <GFx file="Paused_display.swf">
+    </GFx>
+  </UIElement>
+</UIElements>

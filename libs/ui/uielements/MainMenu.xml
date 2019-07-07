@@ -1,0 +1,29 @@
+<UIElements name="Menus">
+  <UIElement name="MainMenu" mouseevents="1" keyevents="1" cursor="1" controller_input="1" old_3di_behavior="1" no_postprocess="1">
+    <GFx file="Main_Menu_starter.swf">
+    </GFx>
+	<events>
+			<!-- buttons -->
+			<event name="onButtonWoodland" fscommand="Woodland_level">
+			</event>			
+			<event name="onButtonAirfield" fscommand="Airfield_level">
+			</event>
+			<event name="a" fscommand="1920x1080">
+			</event>
+			<event name="b" fscommand="1366x768">
+			</event>
+			<event name="c" fscommand="1360x768">
+			</event>
+			<event name="d" fscommand="1024x768">
+			</event>
+			<event name="e" fscommand="800x600">
+			</event>
+			<event name="f" fscommand="512x512">
+			</event>
+			<event name="g" fscommand="128x128">
+			</event>
+			<event name="onButtonExit" fscommand="Exit_game">
+			</event>			
+    </events>
+  </UIElement>
+</UIElements>
